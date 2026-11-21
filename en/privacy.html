@@ -40,10 +40,11 @@
     </ul>
 
     <h2>When the app uses the network</h2>
-    <p>Only to buy Premium and check its status:</p>
+    <p>Only to buy Premium, check its status and load exchange rates:</p>
     <ul>
       <li><strong>The app store</strong> (App Store) processes the payment under Apple's rules.</li>
       <li><strong>RevenueCat</strong> is a service that confirms the purchase. RevenueCat sees an anonymous identifier created by the app and the fact of the purchase. Your subscriptions, amounts and other app data are not sent to it.</li>
+      <li><strong>ExchangeRate-API</strong> (open.er-api.com) is an exchange-rate service. To show your spending in US dollars and in your local currency, the app asks it for current rates no more than once a day. The request contains only a currency code (USD): no data about you, your subscriptions or your device, no cookies and no identifiers. As with any internet request, the service can see your device's IP address; the app does not store it or pass it on. The rates are stored only on your phone. Without internet the app uses the last saved rates or the rates you entered by hand.</li>
     </ul>
 
     <h2>Notifications</h2>
