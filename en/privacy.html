@@ -23,13 +23,22 @@
     </nav>
   </header>
   <main>
-    <div class="draft">DRAFT as of November 19, 2026. This document is not final and may change before the app is released.</div>
     <h1>Privacy Policy</h1>
-    <p class="lead">In short: everything you enter in SubSnitch stays on your device. We do not collect your data.</p>
+    <p class="lead">In short: everything you enter in SubSnitch is stored on your device. We do not receive your subscriptions and we do not collect data for ads or analytics.</p>
+    <p>Updated: November 22, 2026.</p>
 
     <h2>What the app stores</h2>
-    <p>The subscriptions you add (name, amount, currency, period, dates) and your settings. All of it is stored only on your device, in the app's local database.</p>
-    <p>If you import subscriptions from a screenshot, the text is recognized on the device using built-in iOS technology (Apple Vision). The screenshot is not sent anywhere and is not kept by the app.</p>
+    <p>The subscriptions you add (name, amount, currency, period, dates), your settings, exchange rates (ones you entered and ones downloaded from the internet) and a mark that Premium was purchased. All of it is stored only on your device, in the app's local database.</p>
+    <p>If iPhone backup (iCloud or computer) is turned on, the app's database may be included in it. Apple keeps such backups in your account; we have no access to them.</p>
+
+    <h2>Screenshot import</h2>
+    <p>You pick a screenshot in the system photo picker: the app does not get access to your photo library and sees only the image you chose. The text is recognized on the device using built-in iOS technology (Apple Vision; English, Russian, Ukrainian). The image and the recognized text are not stored or sent anywhere: only the subscriptions you tick are added to the app.</p>
+
+    <h2>Bank statement import</h2>
+    <p>If you upload a bank statement (PrivatBank in Excel format, monobank in CSV format), you choose the file yourself in the Files app. It is read and parsed only on your device and is not sent to us or to third parties. The file itself and the transactions in it are not stored: only the subscriptions you tick and the date of the last statement import (to remind you to refresh it) are saved in the app.</p>
+
+    <h2>Backup</h2>
+    <p>You save a backup (a .subsnitch file: subscriptions, settings, rates you entered) yourself via Share, to a place of your choice, for example Files or iCloud Drive. The app does not send it anywhere. Restoring a backup replaces the data in the app.</p>
 
     <h2>What the app does not have</h2>
     <ul>
@@ -37,27 +46,34 @@
       <li>No server of our own: your subscriptions are never sent to us.</li>
       <li>No ads and no advertising identifiers.</li>
       <li>No analytics and no tracking.</li>
+      <li>No access to your photo library, contacts or location.</li>
     </ul>
 
-    <h2>When the app uses the network</h2>
-    <p>Only to buy Premium, check its status and load exchange rates:</p>
+    <h2>When the app goes online</h2>
+    <p>Only for exchange rates, buying Premium and checking its status:</p>
     <ul>
-      <li><strong>The app store</strong> (App Store) processes the payment under Apple's rules.</li>
-      <li><strong>RevenueCat</strong> is a service that confirms the purchase. RevenueCat sees an anonymous identifier created by the app and the fact of the purchase. Your subscriptions, amounts and other app data are not sent to it.</li>
-      <li><strong>ExchangeRate-API</strong> (open.er-api.com) is an exchange-rate service. To show your spending in US dollars and in your local currency, the app asks it for current rates no more than once a day. The request contains only a currency code (USD): no data about you, your subscriptions or your device, no cookies and no identifiers. As with any internet request, the service can see your device's IP address; the app does not store it or pass it on. The rates are stored only on your phone. Without internet the app uses the last saved rates or the rates you entered by hand.</li>
+      <li><strong>Exchange rates.</strong> No more than once a day the app downloads public rates from ExchangeRate-API (open.er-api.com) to show your spending in the currency you need. The request contains only a currency code (USD): no data about you, your subscriptions or your device, no cookies and no identifiers. As with any internet request, the service sees your device's IP address; the app does not store it or pass it on. Offline, the app uses the last saved rates or the ones you entered by hand.</li>
+      <li><strong>App Store</strong> processes the payment under Apple's rules.</li>
+      <li><strong>RevenueCat</strong> is a service that confirms a purchase and its status. It receives an anonymous identifier created by the app, the purchase data (App Store receipt, product, price and dates) and technical data: the iOS and app versions and the store language and country. As with any internet request, its servers can see your device's IP address. Your subscriptions, amounts and other app data are not sent to it. RevenueCat's policy: <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a>.</li>
     </ul>
 
     <h2>Notifications</h2>
-    <p>Charge reminders are scheduled and shown on the device itself. No push server is used.</p>
+    <p>Payment reminders are created and shown on the device itself. No push server is used. The reminder text (subscription name and amount) appears on the lock screen; you can hide it in iPhone Settings → Notifications → Show Previews.</p>
 
     <h2>How to delete your data</h2>
-    <p>Delete the app and all of its data is deleted with it. An export file, if you created one, stays wherever you saved it and is deleted by you.</p>
+    <ul>
+      <li>In the app: Settings → Data → "Delete all data". This erases subscriptions, settings, rates you entered and reminders (rates downloaded from the internet and the Premium purchase mark stay: they are not your data).</li>
+      <li>Deleting the app erases all of its data from the device.</li>
+      <li>Copies inside an iPhone backup are deleted together with that backup.</li>
+      <li>A .subsnitch file (if you created one) stays wherever you saved it, and you delete it.</li>
+      <li>Purchase data at RevenueCat is deleted on request: email the address below and include the Apple order number from your purchase receipt. The app does not know who you are, so the record can only be found by that number.</li>
+    </ul>
 
     <h2>Children</h2>
-    <p>The app is not designed to collect data about anyone, including children, and does not collect it.</p>
+    <p>The app is not intended to collect data about anyone, including children, and does not collect it.</p>
 
     <h2>Contact</h2>
-    <p>Privacy questions: <a href="mailto:subsnitch.support@gmail.com">subsnitch.support@gmail.com</a></p>
+    <p>Privacy questions and requests to delete purchase data: <a href="mailto:subsnitch.support@gmail.com">subsnitch.support@gmail.com</a></p>
   </main>
   <footer>
     <span>© 2026 SubSnitch</span>
